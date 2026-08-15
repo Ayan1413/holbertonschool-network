@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-netstat -tulnp
+# Displays listening sockets
+netstat -46lntu
