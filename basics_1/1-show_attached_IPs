@@ -1,7 +1,4 @@
-#!/bin/bash
-# ifconfig və ya ip komandası ilə IPv4 ünvanlarını çıxarır
-if command -v ifconfig &> /dev/null; then
-    ifconfig | grep -oP '(?<=inet\s)\d+(\.\d+){3}'
-else
-    ip -4 addr show | grep -oP '(?<=inet\s)\d+(\.\d+){3}'
-fi
+#!/usr/bin/env bash
+# Displays active IPv4 addresses on the machine
+
+ifconfig | grep -oP '(?<=inet\s)\d+(\.\d+){3}'
