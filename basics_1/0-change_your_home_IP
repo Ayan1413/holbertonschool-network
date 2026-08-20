@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/usr/env bash
 # Configures localhost to 127.0.0.2 and facebook.com to 8.8.8.8
 
 sed -i 's/127\.0\.0\.1/127.0.0.2/g' /etc/hosts
